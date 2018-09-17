@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <!-- Tab title -->
+    <title>x86 MMG Helpers</title>
+    <!-- Tab favicon -->
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <link rel="stylesheet" media="all" href="css/styles.css" />
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/types.js"></script>
+</head>
+<body>
+    <!-- Page header -->
+    <h1>x86 MMG Helpers</h1>
+    <div class="h1-bottom"></div>
+
+    <div id="container">
+        <!-- All script types are populated in here -->
+    </div>
+
+    <!--<footer></footer>-->
+
+    <!-- ==== Templates ==== -->
+
+    <!-- The template for a script type and iframe -->
+    <template id="scripttype-template">
+        <div class="label-line" id="scripttype-label" style="display: none;"></div>
+        <div class="input-line">
+            <input class="scripttype-button" id="scripttype-run" type="button" value="Run" />
+            <input class="scripttype-button" id="scripttype-close" type="button" value="Close" style="visibility: hidden;" />
+        </div>
+        <div class="iframe-wrapper" id="scripttype-iframe-wrapper" style="display: none;"></div>
+    </template>
+
+    <!-- The template for an input parameter -->
+    <template id="scripttype-input-template">
+        <span class="scripttype-name" id="scripttype-name"></span>
+        <input class="scripttype-input" id="scripttype-input" type="text" />
+        <div class="scripttype-clear" id="scripttype-clear">
+            <svg viewBox="0 0 36 36">
+                <path class="clear-x" d="M 10,10 L 30,30 M 30,10 L 10,30" />
+            </svg>
+        </div>
+    </template>
+
+    <!-- The template for a select parameter -->
+    <template id="scripttype-select-template">
+        <span class="scripttype-name" id="scripttype-name"></span>
+        <select class="scripttype-input" id="scripttype-input"></select>
+        <!-- Empty clear div to keep the same spacing as with input parameters -->
+        <div class="scripttype-clear" id="scripttype-clear"></div>
+    </template>
+
+    <!-- The template for the on-load iframe -->
+    <template id="scripttype-iframe-template">
+        <iframe id="scripttype-iframe" src="" height="0"></iframe>
+    </template>
+
+    <!-- ==== Initialize ==== -->
+
+    <!-- Run after everything is setup -->
+    <!-- Pass the script types array that was created for this page -->
+    <script>initializeScriptTypes(x86mmgScriptTypes);</script>
+</body>
+</html>

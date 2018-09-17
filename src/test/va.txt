@@ -1,0 +1,9 @@
+                        Kernel                    Exec                     Supervisor             User
+
+PML4:                   FFFF8020.7FF00000         FFFF8020.7FF200000       FFFF8020.7FF200000     FFFF8020.7FF200000
+
+PDPT:                   FFFF8020.7FF00000         FFFF8020.7FF200000       FFFF8020.7FF200000     FFFF8020.7FF200000
+
+PD:                     FFFF8020.7FF00000         FFFF8020.7FF200000       FFFF8020.7FF200000     FFFF8020.7FF200000
+
+BPTE:                   FFFF8020.7FF00000         FFFF8020.7FF200000       FFFF8020.7FF200000     FFFF8020.7FF200000

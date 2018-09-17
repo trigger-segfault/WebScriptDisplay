@@ -1,0 +1,189 @@
+﻿
+/*==== ADJUSTABLE SETTINGS ====*/
+
+/* Widths affecting iframe size. */
+#container {
+    /* Define default percent (%) or pixel (px) width here. */
+    width: 80%;
+    /* Define minimum pixel (px) width here. */
+    min-width: 980px;
+}
+
+/* Input widths, minimum for both is 150px. */
+input.scripttype-input {
+    /* Text input pixel (px) width. */
+    width: 300px;
+}
+
+select.scripttype-input {
+    /* Dropdown pixel (px) width. */
+    width: 200px;
+}
+
+
+/*==== OVERRIDES ====*/
+
+body {
+    font-family: "Segoe UI", "Arial", sans-serif;
+    background: #F6F6F6;
+    margin: 0;
+}
+
+/* Disable ugly Firefox focus dotted lines */
+input::-moz-focus-inner {
+    border: 0;
+}
+select::-moz-focus-inner {
+    border: 0;
+}
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
+
+/*==== CONTAINER ====*/
+#container {
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.input-line {
+    margin-bottom: 20px;
+}
+
+
+/*==== PAGE HEADER ====*/
+
+h1 {
+    font-family: "Consolas", "Arial", sans-serif;
+    color: white;
+    background-color: #425563;
+
+    text-align: center;
+
+    width: 100%;
+    height: 50px;
+    padding: 20px 0 0px 0;
+    margin: 0;
+}
+
+/* Bottom div for drawing the cyan line. */
+.h1-bottom {
+    background-color: #425563;
+    border-top: 2px solid #2BC5BD;
+
+    padding: 0 0 20px 0;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #F0F0F0;
+    height: 70px;
+}
+
+/*==== LABELS ====*/
+
+.label-line {
+    font-family: "Consolas", "Arial", sans-serif;
+    font-size: 24px;
+    color: #333333;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.scripttype-name {
+    font-family: "Segoe UI", "Arial", sans-serif;
+    letter-spacing: 0.2px;
+    font-weight: 600;
+    color: #222222;
+}
+
+
+/*==== INPUT FIELD ====*/
+.scripttype-input {
+    font-size: 16px;
+
+    border: 1px solid #e1e1e1;
+    border-radius: 3.5px;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.03);
+
+    min-width: 150px;
+    width: 300px;
+    padding: 8px 10px;
+    margin: auto;
+}
+
+.scripttype-input:hover {
+    border: 1px solid #bfbfbf;
+}
+
+/* Add extra requirement (input) so it overrides :hover */
+input.scripttype-input:focus {
+    border: 1px solid #0094FF;
+}
+/* Add extra requirement (select) so it overrides :hover */
+select.scripttype-input:focus {
+    border: 1px solid #0094FF;
+}
+
+
+/*==== INPUT FIELD CLEAR BUTTON ====*/
+.scripttype-clear {
+    display: inline-block;
+    vertical-align: middle;
+
+    cursor: pointer;
+
+    width: 22px;
+    margin-left: -32px;
+    margin-right: 10px; /* -margin-left - width */
+}
+
+.clear-x {
+    fill: transparent;
+    stroke: #9C9C9C;
+    stroke-linecap: round;
+    stroke-width: 5;
+}
+
+/*==== INPUT FIELD RUN & CLOSE BUTTONS ====*/
+.scripttype-button {
+    font-family: "Segoe UI", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    background-color: #01B187;
+    color: #fff;
+
+    cursor: pointer;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.03);
+    
+    border: 1px solid transparent;
+    border-radius: 3.5px;
+    min-width: 64px;
+    padding: 5px;
+    margin: 0 2px 0 0;
+}
+
+.scripttype-button:hover {
+    background-color: #019671;
+}
+
+/* Add extra requirement (input) so it overrides :hover */
+input.scripttype-button:focus {
+    border: 1px solid #0094FF;
+}
+
+
+/*==== IFRAME DISPLAY ====*/
+iframe {
+	background-color: white;
+    width: 100%;
+
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.09);
+    border: 1px solid #bababa;
+    border-radius: 6px;
+
+    margin-bottom: 20px;
+}
