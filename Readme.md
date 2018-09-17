@@ -4,6 +4,8 @@
 
 A small html page for displaying the results of calling a url with parameters. This was designed for use with an [OpenVMS](https://en.wikipedia.org/wiki/OpenVMS) server for running small cgi scripts, hence the existing *vms* favicon and sample urls.
 
+***
+
 ## Measurements
 
 Adjustable measurements have been documented and listed at the top of `src/css/styles.css` to faciliate customization.
@@ -44,6 +46,8 @@ The default height of the `iframe`. (when Parameter 6 is false or fails)
 `true` if the iframe should attempt to resize to the content.
 Otherwise `false`.<br/>
 NOTE: Will ONLY work if the url is on the same domain as this page.
+
+***
 
 ## Example Page
 
